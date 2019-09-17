@@ -7,12 +7,12 @@
  */
 
 export default {
-  host: 'smtp.mailtrap.io',
-  port: 2525,
+  host: process.env.MAIL_HOST,
+  port: process.env.MAIL_PORT,
   secure: false,
   auth: {
-    user: 'cca9459806da9c',
-    pass: 'a9764389375c2a',
+    user: process.env.MAIL_USER,
+    pass: process.env.MAIL_PASS,
   },
   default: {
     from: 'FIGGY | Equipe FIGGY <newton@figgy.com.br>',
